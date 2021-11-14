@@ -10,6 +10,10 @@ const userSchema=mongoose.Schema({
         trim:true,  //띄어쓰기 가능하게 만듦
         unique:1
     },
+    password:{
+        type:String,
+        minLength:5
+    },
     lastname:{
         type:String,
         maxLength:50
